@@ -22,7 +22,7 @@ A collection of Python programs, scripts, and projects for learning and referenc
 
 ## License
 
-* CC0 1.0 Universal
+* MIT License
 
 ## Contributing
 
