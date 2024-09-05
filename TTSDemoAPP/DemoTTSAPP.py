@@ -136,13 +136,12 @@ def main():
         api_key = DEFAULT_API_KEY
         is_default_key = True
     else:
-        api_key = st.sidebar.text_input("Enter your Eleven Labs API key", type="password", value=config_data.get("user_api_key", ""))
+        api_key = st.sidebar.text_input("Enter your Eleven Labs API key", type="password",)
         is_default_key = False
 
     if not is_default_key:
-        if st.sidebar.button("Change API Key"):
-            config_data["user_api_key"] = api_key
-            save_config_file(config_data)
+        if st.sidebar.button("Save"):
+            st.success("API key changed successfully.")
 
         if not api_key:
             st.warning("Please provide an API key to continue.")
