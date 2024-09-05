@@ -210,7 +210,6 @@ def main():
                 })
                 config_data["used_characters"] += len(text)
                 save_config_file(config_data)
-                DEFAULT_CHARACTER_LIMIT -= len(text)
                 text_to_speech(api_key, text, model_id, voice_id, stability, similarity, style, speaker_boost, output_file=output_file)
             else:
                 st.error("Please enter some text to convert.")
