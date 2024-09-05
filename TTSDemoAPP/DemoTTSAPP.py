@@ -10,7 +10,7 @@ import datetime
 CONFIG_FILE_PATH = os.path.join(os.path.expanduser("~"), ".config", "tts_app.bin")
 
 DEFAULT_API_KEY = "sk_df1301a9a3b9071df7f1cc8ffe18e988c08848ebab46fdc5"
-DEFAULT_CHARACTER_LIMIT = 500
+DEFAULT_CHARACTER_LIMIT = 2000
 BASE_URL = "https://api.elevenlabs.io/v1"
 
 def create_config_file():
