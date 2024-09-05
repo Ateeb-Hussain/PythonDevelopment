@@ -2,8 +2,7 @@
 
 ## Instructions
 
-1. Extract the contents of the zip file to a directory on your computer.
-2. Double-click the `Demo_TTS_APP.exe` file to start the application.
-3. Follow the on-screen instructions to use the application.
+1. INstall requirements using ```pip install -r requirements.txt```
+2. Run the app using ```streamlit run DemoTTSAPP.py```
 
 If you encounter any issues, please contact support.
