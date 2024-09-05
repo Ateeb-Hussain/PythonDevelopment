@@ -10,7 +10,7 @@ import datetime
 CONFIG_FILE_PATH = os.path.join(os.path.expanduser("~"), ".config", "tts_app.bin")
 
 DEFAULT_API_KEY = "sk_df1301a9a3b9071df7f1cc8ffe18e988c08848ebab46fdc5"
-DEFAULT_CHARACTER_LIMIT = 2000
+DEFAULT_CHARACTER_LIMIT = 500
 BASE_URL = "https://api.elevenlabs.io/v1"
 
 def create_config_file():
@@ -210,6 +210,7 @@ def main():
                 })
                 config_data["used_characters"] += len(text)
                 save_config_file(config_data)
+                DEFAULT_CHARACTER_LIMIT -= len(text)
                 text_to_speech(api_key, text, model_id, voice_id, stability, similarity, style, speaker_boost, output_file=output_file)
             else:
                 st.error("Please enter some text to convert.")
