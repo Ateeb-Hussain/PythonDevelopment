@@ -193,7 +193,7 @@ def main():
     # Time
     time = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     time_file = datetime.datetime.now().strftime("%d%m%Y %H%M%S")
-    output_file = f"Demo_Audio_Sample_{time_file}.wav"
+    output_file = f"Demo_Audio_Sample_{time_file}.mp3"
 
     # Convert text to speech
     if st.button("Generate Speech"):
