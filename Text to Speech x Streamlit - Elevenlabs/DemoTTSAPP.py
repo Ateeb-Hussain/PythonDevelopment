@@ -2,7 +2,6 @@ import streamlit as st
 import os
 import requests
 import json
-import base64
 import pickle
 import datetime
 
